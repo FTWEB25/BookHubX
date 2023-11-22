@@ -1,0 +1,28 @@
+
+---
+
+# BookHubX Project Milestones (2-week timeline)
+
+## Milestone 1: Project Setup and Backend Development
+- **Duration: 1 week**
+- Tasks:
+    - Set up the development environment (Angular, Node.js, MongoDB).
+    - Design basic database schema for books and users.
+    - Implement backend APIs for basic book listing and user authentication.
+
+## Milestone 2: Frontend Implementation and Minimal Features
+- **Duration: 1 week**
+- Tasks:
+    - Develop a simple, responsive UI using Angular.
+    - Integrate frontend with basic backend APIs for book listing and user login/signup.
+    - Implement basic book browsing and viewing functionality.
+    - Enable user registration and login.
+
+## Milestone 3: Testing, Bug Fixes, and Documentation
+- **Duration: Ongoing within the 2-week timeframe**
+- Tasks:
+    - Perform basic testing of implemented features (manual testing).
+    - Address critical bugs and issues.
+    - Create basic documentation outlining implemented functionalities and setup instructions.
+
+---
