@@ -8,22 +8,22 @@ const bookRouter=express.Router()
 
 bookRouter.get("/getbooks",auth,authorize(['user','author','admin']),async(req,res)=>{
     try {
-        const books=BookModel.find()
+        const books= await BookModel.find()
         res.status(200).json({msg:books})
     } catch (error) {
         res.status(400).json({error:error.message})
     }
 })
 
-bookRouter.get("/getbooks/:id",auth,authorize(['author','admin']),async(req,res)=>{
-    const authorId=req.params.id
-    try {
-        const books=BookModel.find({author_ID:authorId})
-        res.status(200).json({msg:books})
-    } catch (error) {
-        res.status(400).json({error:error.message})
-    }
-})
+// bookRouter.get("/getbooks/:id",auth,authorize(['author','admin']),async(req,res)=>{
+//     const authorId=req.params.id
+//     try {
+//         const books=BookModel.find({author_ID:authorId})
+//         res.status(200).json({msg:books})
+//     } catch (error) {
+//         res.status(400).json({error:error.message})
+//     }
+// })
 
 bookRouter.post("/addbook",auth,authorize(['author','admin']),async(req,res)=>{
     const payload=req.body

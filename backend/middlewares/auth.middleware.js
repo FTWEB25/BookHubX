@@ -1,4 +1,5 @@
 const jwt =require("jsonwebtoken")
+const UserModel=require("../model/user.model")
 
 const auth=async(req,res,next)=>{
     const token=req.headers.authorization?.split(' ')[1]
